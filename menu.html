@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cafe Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Pacifico&display=swap"
+    rel="stylesheet">
   <style>
-    /* ===== THEME SETTINGS: Base Master Design ===== */
+    /* ===== THEME SETTINGS ===== */
     :root {
-      --page-bg: linear-gradient(#e83e8c, #f4978e);
+      --page-bg: linear-gradient(#d94a9c, #ea9a82);
       --card-bg: #efefef;
       --text: #333333;
-      --heading-color: #333333;
+      --heading-color: #2b2b2b;
       --accent: #333333;
       --muted: #666666;
-      --heading-font: "Brush Script MT", cursive;
-      --body-font: Verdana, Arial, sans-serif;
+      --heading-font: "Pacifico", "Brush Script MT", cursive;
+      --body-font: "Josefin Sans", "Century Gothic", Verdana, sans-serif;
     }
 
     /* ===== LAYOUT ===== */
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      padding: 40px 16px;
+      padding: 30px 16px;
       background: var(--page-bg);
       background-attachment: fixed;
       color: var(--text);
       font-family: var(--body-font);
     }
+
     .menu {
-      max-width: 640px;
+      max-width: 700px;
       margin: 0 auto;
-      padding: 30px 40px;
+      padding: 60px 40px 40px;
       background: var(--card-bg);
       border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
     }
+
     h1 {
       margin: 0;
       text-align: center;
       font-family: var(--heading-font);
-      font-size: 3.5rem;
+      font-weight: 400;
+      font-size: 4rem;
+      line-height: 1.2;
       color: var(--heading-color);
     }
+
     .hours {
+      margin: 20px 0 30px;
       text-align: center;
       font-style: italic;
-      font-size: 0.8rem;
+      font-weight: 300;
+      font-size: 0.85rem;
       color: var(--muted);
     }
+
     h2 {
-      margin-top: 28px;
-      padding-bottom: 4px;
-      border-bottom: 2px solid var(--accent);
+      margin: 28px 0 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--accent);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
       color: var(--accent);
     }
+
     .row {
       display: flex;
       justify-content: space-between;
-      font-weight: bold;
-      margin-top: 12px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-top: 18px;
     }
+
     .desc {
-      margin: 2px 0 0;
-      font-size: 0.85rem;
+      margin: 4px 0 0;
+      font-size: 0.9rem;
       font-style: italic;
+      font-weight: 300;
       color: var(--muted);
     }
   </style>
 </head>
+
 <body>
   <div class="menu">
     <h1>Menu</h1>
@@ -89,4 +114,5 @@
     <p class="desc">Double espresso with steamed milk and foam</p>
   </div>
 </body>
+
 </html>
